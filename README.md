@@ -61,10 +61,12 @@ Essa abordagem reduz significativamente o risco de vazamento de credenciais e se
 ## Estrutura do Projeto
 
 ```text
-bankaccount/
+EncryptedPassword/
 │
-├── __main__.py
-└── cripto.py
+├── bankaccount/
+│   ├── __main__.py
+│   └── cripto.py
+│
 ├── .gitignore
 └── README.md
 ```
