@@ -65,8 +65,8 @@ bankaccount/
 │
 ├── __main__.py
 └── cripto.py
-├── README.md
-└── .gitignore
+├── .gitignore
+└── README.md
 ```
 
 ## Como Executar
