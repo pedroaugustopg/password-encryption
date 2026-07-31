@@ -1,13 +1,25 @@
 from rich.console import Console
-from bankaccount.cripto import *
+from cripto import *
 
 
 def main():
     console = Console()
 
-    account_id = int(input("Account ID: "))
-    account_name = input("Account Holder: ")
-    initial_balance = float(input("Initial Balance: "))
+    while True:
+        try:
+            account_id = int(input("Account ID: "))
+            break
+        except ValueError:
+            console.print("ERROR! Enter only integer numbers for the Account ID.")
+
+        account_name = input("Account Holder: ")
+
+    while True:
+        try:
+            initial_balance = float(input("Initial Balance: "))
+            break
+        except ValueError:
+            console.print("ERROR! Enter only numeric values for the Initial Balance.")
 
     account = BankAccount(account_id, account_name, initial_balance)
 
